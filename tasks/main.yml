@@ -1,0 +1,10 @@
+---
+- name: install ius repo
+  yum:
+    name: https://centos{{ ansible_distribution_major_version }}.iuscommunity.org/ius-release.rpm
+- name: change repository status
+  ini_file:
+    path: /etc/yum.repos.d/ius.repo
+    section: ius
+    option: enabled
+    value: "{{ '1' if repo_ius_enabled else '0' }}"
