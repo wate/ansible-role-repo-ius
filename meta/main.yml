@@ -2,8 +2,9 @@ galaxy_info:
   author: yoshiaki tanaka
   description: install ius repogitory
   license: MIT
+  min_ansible_version: 2.5
   platforms:
-    - name: CentOS
+    - name: EL
       versions:
         - 7
   galaxy_tags: []
