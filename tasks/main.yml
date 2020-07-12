@@ -1,7 +1,7 @@
 ---
 - name: install ius repo
   yum:
-    name: https://centos{{ ansible_distribution_major_version }}.iuscommunity.org/ius-release.rpm
+    name: https://repo.ius.io/ius-release-el{{ ansible_distribution_major_version }}.rpm
 - name: change repository status
   ini_file:
     path: /etc/yum.repos.d/ius.repo
