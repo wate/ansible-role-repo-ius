@@ -1,8 +1,9 @@
 repo-ius
 =========
 
-iusリポジトリのインストールとセットアップを行います
+[![Build Status](https://travis-ci.org/wate/ansible-role-repo-ius.svg?branch=master)](https://travis-ci.org/wate/ansible-role-repo-ius)
 
+iusリポジトリのインストールとセットアップを行います
 
 Role Variables
 --------------
@@ -12,7 +13,7 @@ Role Variables
 インストール後にリポジトリを有効化するか否かを指定します。
 
 ```yaml
-repo_ius_enabled: yes
+repo_ius_enabled: true
 ```
 
 Example Playbook
@@ -21,7 +22,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-     - { role: repo-ius }
+     - role: repo-ius
 ```
 
 
