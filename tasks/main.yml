@@ -8,3 +8,4 @@
     section: ius
     option: enabled
     value: "{{ '1' if repo_ius_enabled else '0' }}"
+    mode: "0644"
